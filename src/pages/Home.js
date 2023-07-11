@@ -42,11 +42,24 @@ const Home = () => {
         <div className="smoothies">
           <div className="order-by">
             <p>Order by:</p>
-            <button onClick={() => setOrderBy("created_at")}>
+            <button
+              onClick={() => setOrderBy("created_at")}
+              className={`${orderBy ? "active" : "deactive"}`}
+            >
               Time Created
             </button>
-            <button onClick={() => setOrderBy("title")}>Title</button>
-            <button onClick={() => setOrderBy("rating")}>Rating</button>
+            <button
+              onClick={() => setOrderBy("title")}
+              className={`${orderBy ? "active" : "deactive"}`}
+            >
+              Title
+            </button>
+            <button
+              onClick={() => setOrderBy("rating")}
+              className={`${orderBy ? "active" : "deactive"}`}
+            >
+              Rating
+            </button>
           </div>
           <div className="smoothie-grid">
             {smoothies.map((smoothie) => (

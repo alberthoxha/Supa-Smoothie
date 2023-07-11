@@ -11,8 +11,12 @@ function App() {
       <nav>
         <h1>Supa Smoothies</h1>
         <div className="head">
-          <Link to="/">Home</Link>
-          <Link to="/create">Create New Smoothie</Link>
+          <Link to="/" className="hm">
+            Home
+          </Link>
+          <Link to="/create" className="btn">
+            Create New Smoothie
+          </Link>
         </div>
       </nav>
       <Routes>

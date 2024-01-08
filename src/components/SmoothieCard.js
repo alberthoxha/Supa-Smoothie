@@ -24,10 +24,10 @@ const SmoothieCard = ({ smoothie, onDelete }) => {
       <div className="rating">{smoothie.rating}</div>
       <div className="buttons">
         <Link to={"/" + smoothie.id}>
-          <i className="material-icons">edit</i>
+          <i className="material-icons">Edit</i>
         </Link>
         <i className="material-icons" onClick={handleDelete}>
-          delete
+          Delete
         </i>
       </div>
     </div>

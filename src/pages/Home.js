@@ -58,7 +58,7 @@ const Home = () => {
               onClick={() => setOrderBy("rating")}
               className={`${orderBy ? "active" : "deactive"}`}
             >
-              Rating
+              rating
             </button>
           </div>
           <div className="smoothie-grid">
